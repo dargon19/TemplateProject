@@ -11,4 +11,15 @@ public class QueryFormatterTest {
         String expected = "something";
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void should_escape_minus() {
+        String actual = QueryFormatter.format("some-thing");
+        String expected = "some\\-thing";
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void name() {
+    }
 }
