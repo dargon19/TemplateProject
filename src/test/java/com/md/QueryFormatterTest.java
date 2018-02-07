@@ -25,4 +25,11 @@ public class QueryFormatterTest {
         String expected = "some\\-thing";
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void should_not_escape_with_quotation_mark() {
+        String actual = QueryFormatter.format("\"some-thing\"");
+        String excepted = "\"some-thing\"";
+        assertEquals(excepted, actual);
+    }
 }
