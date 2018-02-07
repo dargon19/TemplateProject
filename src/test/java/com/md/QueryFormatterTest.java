@@ -20,6 +20,9 @@ public class QueryFormatterTest {
     }
 
     @Test
-    public void name() {
+    public void should_not_escape_escaped_minus() {
+        String actual = QueryFormatter.format("some\\-thing");
+        String expected = "some\\-thing";
+        assertEquals(expected, actual);
     }
 }
