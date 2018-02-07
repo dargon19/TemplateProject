@@ -1,4 +1,4 @@
-package com.md;
+package com.md.training1;
 
 public class QueryFormatter {
     public static String format(String str) {

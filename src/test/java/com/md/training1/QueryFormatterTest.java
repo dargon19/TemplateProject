@@ -1,5 +1,6 @@
-package com.md;
+package com.md.training1;
 
+import com.md.training1.QueryFormatter;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
